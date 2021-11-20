@@ -1,7 +1,6 @@
 # Личный проект «Шесть городов» [![Build status][travis-image]][travis-url]
 
-* Студент: [Богдан Котов](https://up.htmlacademy.ru/react/6/user/1473721).
-* Наставник: [Сергей Вохмянин](https://htmlacademy.ru/profile/id530823).
+* Студент: [Yaroslav Grigorev](https://up.htmlacademy.ru/react/6/user/1403461).
 
 ---
 
