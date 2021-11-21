@@ -1,10 +1,10 @@
 import React from 'react';
-import MyComponent from '../my-component/my-component';
+import Main from '../main/main';
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <React.Fragment>
-      <MyComponent/>
+      <Main/>
     </React.Fragment>
   );
 };
