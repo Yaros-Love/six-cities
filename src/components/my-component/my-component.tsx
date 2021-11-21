@@ -1,7 +1,6 @@
 import React from 'react';
 
 const MyComponent = () => {
-
   return (
     <React.Fragment>
       <div className="page page--gray page--main">

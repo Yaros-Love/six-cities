@@ -4,7 +4,7 @@
   "private": true,
   "description": "Личный проект «Шесть городов» от HTML Academy",
   "scripts": {
-    "eslint": "eslint --ext .jsx --ext .js src/",
+    "eslint": "eslint --ext .jsx --ext .js --ext .tsx src/",
     "test": "npm run eslint",
     "build": "webpack --mode production",
     "start": "webpack-dev-server",
@@ -18,6 +18,8 @@
     "@types/node": "^16.11.9",
     "@types/react": "^17.0.35",
     "@types/react-dom": "^17.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "babel-loader": "8.2.3",
     "eslint": "7.18.0",
     "eslint-config-htmlacademy": "2.1.0",
