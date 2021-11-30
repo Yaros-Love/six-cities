@@ -6,7 +6,7 @@ interface reviewsUser {
   reviewsDate: string,
 }
 
-interface Offer {
+export interface Offer {
   id: number,
   isPremium: boolean,
   offerCardImg: string,
@@ -37,8 +37,8 @@ export const FakeOffers: Offer[] = [
     isPremium: true,
     offerCardImg: `img/apartment-01.jpg`,
     type: `Apartment`,
-    name: `Beautiful &amp; luxurious apartment at great location`,
-    ratinStarsWidth: 80,
+    name: `Beautiful & luxurious apartment at great location`,
+    ratinStarsWidth: 40,
     rating: 4.8,
     feature: {
       bedrooms: 1,
@@ -252,7 +252,7 @@ export const FakeOffers: Offer[] = [
     isPremium: true,
     offerCardImg: `img/apartment-01.jpg`,
     type: `Apartment`,
-    name: `Beautiful &amp; luxurious apartment at great location`,
+    name: `Beautiful & luxurious apartment at great location`,
     ratinStarsWidth: 80,
     rating: 4.8,
     feature: {
