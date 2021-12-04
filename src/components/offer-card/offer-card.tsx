@@ -3,12 +3,15 @@ import {Offer} from '../../mocks/offers';
 
 interface OfferCardProps {
   offer: Offer,
+  onCardOfferHover: (param: Offer) => void,
 }
 
-const OfferCard = ({offer}: OfferCardProps): JSX.Element => {
+const OfferCard = ({offer, onCardOfferHover}: OfferCardProps): JSX.Element => {
   return (
     <React.Fragment>
-      <article className="cities__place-card place-card">
+      <article
+        onMouseMove={() => onCardOfferHover(offer)}
+        className="cities__place-card place-card">
         <div className="cities__image-wrapper place-card__image-wrapper">
           <a href="#">
             <img className="place-card__image" src={offer.offerCardImg} width="260" height="200" alt="Place image"/>
