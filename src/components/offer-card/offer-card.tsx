@@ -4,17 +4,23 @@ import {Offer} from '../../mocks/offers';
 interface OfferCardProps {
   offer: Offer,
   onCardOfferHover: (param: Offer) => void,
+  style: {
+    article: string,
+    imageWrapper: string,
+    imageWidth: string,
+    imageHeight: string
+  }
 }
 
-const OfferCard = ({offer, onCardOfferHover}: OfferCardProps): JSX.Element => {
+const OfferCard = ({offer, onCardOfferHover, style}: OfferCardProps): JSX.Element => {
   return (
     <React.Fragment>
       <article
         onMouseMove={() => onCardOfferHover(offer)}
-        className="cities__place-card place-card">
-        <div className="cities__image-wrapper place-card__image-wrapper">
+        className={`${style.article}card place-card`}>
+        <div className={`${style.imageWrapper}__image-wrapper place-card__image-wrapper`}>
           <a href="#">
-            <img className="place-card__image" src={offer.offerCardImg} width="260" height="200" alt="Place image"/>
+            <img className="place-card__image" src={offer.offerCardImg} width={style.imageWidth} height={style.imageHeight} alt="Place image"/>
           </a>
         </div>
         <div className="place-card__info">

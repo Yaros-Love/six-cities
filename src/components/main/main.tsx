@@ -1,6 +1,7 @@
 import React from 'react';
 import {Offer} from '../../mocks/offers';
 import OfferCardList from '../offer-card-list/offer-card-list';
+import {STYLES_OFFERS_CARDS} from '../../const/const';
 
 interface mainProps {
   offers: Offer[]
@@ -91,7 +92,9 @@ const Main = ({offers}: mainProps): JSX.Element => {
                     <li className="places__option" tabIndex={0}>Top rated first</li>
                   </ul>
                 </form>
-                <OfferCardList offers={offers}/>
+                <div className="cities__places-list places__list tabs__content">
+                  <OfferCardList offers={offers} style={STYLES_OFFERS_CARDS.main}/>
+                </div>
               </section>
               <div className="cities__right-section">
                 <section className="cities__map map"></section>

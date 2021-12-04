@@ -22,7 +22,7 @@ const App = ({offers}: AppProps): React.ReactElement => {
           <SingIn/>
         </Route>
         <Route path='/favorites' exact>
-          <Favorites/>
+          <Favorites offers={offers}/>
         </Route>
         <Route path='/offer/:id' exact>
           <Room/>

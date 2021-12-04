@@ -4,9 +4,15 @@ import OfferCard from '../offer-card/offer-card';
 
 interface OfferCradList {
   offers: Offer[],
+  style: {
+    article: string,
+    imageWrapper: string,
+    imageWidth: string,
+    imageHeight: string
+  },
 }
 
-const OfferCradList = ({offers}: OfferCradList): JSX.Element => {
+const OfferCradList = ({offers, style}: OfferCradList): JSX.Element => {
   const [currentCardOffer, setCurrentCardOffer] = useState({});
 
   const onCardOfferHover = (offer: Offer) => {
@@ -15,9 +21,7 @@ const OfferCradList = ({offers}: OfferCradList): JSX.Element => {
 
   return (
     <React.Fragment>
-      <div className="cities__places-list places__list tabs__content">
-        {offers.map((item: Offer) => <OfferCard offer={item} key={item.id} onCardOfferHover={onCardOfferHover}/>)}
-      </div>
+      {offers.map((item: Offer) => <OfferCard offer={item} key={item.id} onCardOfferHover={onCardOfferHover} style={style}/>)}
     </React.Fragment>
   );
 };
