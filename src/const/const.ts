@@ -12,3 +12,12 @@ export const STYLES_OFFERS_CARDS = {
     imageHeight: `110`
   }
 };
+
+export const AppRoutes = {
+  ROOT: `/`,
+  FAVORITES: `/favorites`,
+  SINGIN: `/login`,
+  ROOM: `/offer/`,
+};
+
+export const FAKE_COUNT_IMAGES = 5;

@@ -1,4 +1,5 @@
-interface reviewsUser {
+export interface reviewsUser {
+  id: number,
   userAvatarUrl: string,
   userName: string,
   reviewsRatinStarsWidth: number,
@@ -66,6 +67,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -109,6 +111,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -152,6 +155,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -195,6 +199,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -238,6 +243,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -281,6 +287,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -324,9 +331,10 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
-          reviewsRatinStarsWidth: 80,
+          reviewsRatinStarsWidth: 20,
           reviewsText: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.`,
           reviewsDate: `April 2019`
         },
@@ -367,6 +375,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -410,6 +419,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
@@ -453,6 +463,7 @@ export const FakeOffers: Offer[] = [
       amount: 1,
       reviewsList: [
         {
+          id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,

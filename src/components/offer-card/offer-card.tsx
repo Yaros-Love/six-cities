@@ -1,5 +1,7 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {Offer} from '../../mocks/offers';
+import {AppRoutes} from '../../const/const';
 
 interface OfferCardProps {
   offer: Offer,
@@ -43,7 +45,7 @@ const OfferCard = ({offer, onCardOfferHover, style}: OfferCardProps): JSX.Elemen
             </div>
           </div>
           <h2 className="place-card__name">
-            <a href="#">{offer.name}</a>
+            <Link to={`${AppRoutes.ROOM}${offer.id}`}>{offer.name}</Link>
           </h2>
           <p className="place-card__type">{offer.type}</p>
         </div>

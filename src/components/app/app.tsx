@@ -24,9 +24,7 @@ const App = ({offers}: AppProps): React.ReactElement => {
         <Route path='/favorites' exact>
           <Favorites offers={offers}/>
         </Route>
-        <Route path='/offer/:id' exact>
-          <Room/>
-        </Route>
+        <Route path='/offer/:id' exact render={(prop) => <Room offer={offers[Number(prop.match.params.id)]}/>}/>
         <Route>
           <NotFound/>
         </Route>
