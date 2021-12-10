@@ -21,3 +21,5 @@ export const AppRoutes = {
 };
 
 export const FAKE_COUNT_IMAGES = 5;
+
+export const STARS_COUNT = [5, 4, 3, 2, 1];
