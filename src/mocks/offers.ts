@@ -15,6 +15,10 @@ export interface Offer {
   name: string,
   ratinStarsWidth: number,
   rating: number,
+  coords: {
+    latitude: number,
+    longitude: number
+  },
   feature: {
     bedrooms: number,
     adults: number,
@@ -41,6 +45,10 @@ export const FakeOffers: Offer[] = [
     name: `Beautiful & luxurious apartment at great location`,
     ratinStarsWidth: 40,
     rating: 4.8,
+    coords: {
+      latitude: 52.3909553943508,
+      longitude: 4.85309666406198
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -85,6 +93,10 @@ export const FakeOffers: Offer[] = [
     name: `Wood and stone place`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 52.369553943508,
+      longitude: 4.85309666406198
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -129,6 +141,10 @@ export const FakeOffers: Offer[] = [
     name: `Canal View Prinsengracht`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 52.3909553943508,
+      longitude: 4.929309666406198
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -173,6 +189,10 @@ export const FakeOffers: Offer[] = [
     name: `Nice, cozy, warm big bed apartment`,
     ratinStarsWidth: 100,
     rating: 4.8,
+    coords: {
+      latitude: 52.3809553943508,
+      longitude: 4.939309666406198
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -217,6 +237,10 @@ export const FakeOffers: Offer[] = [
     name: `Wood and stone place`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 0,
+      longitude: 0
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -261,6 +285,10 @@ export const FakeOffers: Offer[] = [
     name: `Beautiful & luxurious apartment at great location`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 0,
+      longitude: 0
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -305,6 +333,10 @@ export const FakeOffers: Offer[] = [
     name: `Wood and stone place`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 0,
+      longitude: 0
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -349,6 +381,10 @@ export const FakeOffers: Offer[] = [
     name: `Canal View Prinsengracht`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 0,
+      longitude: 0
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -393,6 +429,10 @@ export const FakeOffers: Offer[] = [
     name: `Nice, cozy, warm big bed apartment`,
     ratinStarsWidth: 100,
     rating: 4.8,
+    coords: {
+      latitude: 0,
+      longitude: 0
+    },
     feature: {
       bedrooms: 1,
       adults: 2
@@ -437,6 +477,10 @@ export const FakeOffers: Offer[] = [
     name: `Wood and stone place`,
     ratinStarsWidth: 80,
     rating: 4.8,
+    coords: {
+      latitude: 0,
+      longitude: 0
+    },
     feature: {
       bedrooms: 1,
       adults: 2

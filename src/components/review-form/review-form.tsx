@@ -3,12 +3,12 @@ import {STARS_COUNT} from "../../const/const";
 import StarInput from "./star-input";
 
 const ReviewForm = (): JSX.Element => {
-  const [rating, setRating] = useState<string | null>(null);
+  const [rating, setRating] = useState<number | null>(null);
   const [userText, setUserText] = useState<string | null>(``);
 
   const textAreaRef = useRef<HTMLTextAreaElement>(null);
 
-  const starClick = (currentNumber: string | null): void => {
+  const starClick = (currentNumber: number | null): void => {
     setRating(currentNumber);
   };
 

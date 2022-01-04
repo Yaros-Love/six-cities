@@ -3,6 +3,7 @@ import {Offer} from '../../mocks/offers';
 import OfferCardList from '../offer-card-list/offer-card-list';
 import {STYLES_OFFERS_CARDS} from '../../const/const';
 import Header from '../header/header';
+import Map from '../map/map';
 
 interface mainProps {
   offers: Offer[]
@@ -77,7 +78,7 @@ const Main = ({offers}: mainProps): JSX.Element => {
                 </div>
               </section>
               <div className="cities__right-section">
-                <section className="cities__map map"></section>
+                <Map offers={offers}/>
               </div>
             </div>
           </div>
