@@ -3,8 +3,8 @@ import {Offer} from '../../mocks/offers';
 import {FAKE_COUNT_IMAGES} from '../../const/const';
 import Header from '../header/header';
 import OfferImage from '../offer-image/offer-image';
-import Review from '../review-item/review-item';
 import ReviewForm from '../review-form/review-form';
+import ReviewsList from '../reviews-list/reviews-list';
 
 interface roomProps {
   offer: Offer,
@@ -89,10 +89,7 @@ const Room = ({offer}: roomProps): JSX.Element => {
                   </div>
                 </div>
                 <section className="property__reviews reviews">
-                  <h2 className="reviews__title">Reviews &middot; <span className="reviews__amount">1</span></h2>
-                  <ul className="reviews__list">
-                    {offer.reviews.reviewsList.map((review) => <Review key={review.id} review={review}/>)}
-                  </ul>
+                  <ReviewsList reviews={offer.reviews}/>
                   <ReviewForm/>
                 </section>
               </div>

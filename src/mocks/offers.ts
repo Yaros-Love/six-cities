@@ -120,13 +120,21 @@ export const FakeOffers: Offer[] = [
       description: ` A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century. An independent House, strategically located between Rembrand Square and National Opera, but where the bustle of the city comes to rest in this alley flowery and colorful.      `,
     },
     reviews: {
-      amount: 1,
+      amount: 2,
       reviewsList: [
         {
           id: 0,
           userAvatarUrl: `img/avatar-max.jpg`,
           userName: `Max`,
           reviewsRatinStarsWidth: 80,
+          reviewsText: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.`,
+          reviewsDate: `April 2019`
+        },
+        {
+          id: 1,
+          userAvatarUrl: `img/avatar-max.jpg`,
+          userName: `Max`,
+          reviewsRatinStarsWidth: 40,
           reviewsText: `A quiet cozy and picturesque that hides behind a a river by the unique lightness of Amsterdam. The building is green and from 18th century.`,
           reviewsDate: `April 2019`
         },
