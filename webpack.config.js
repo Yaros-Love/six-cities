@@ -4,7 +4,8 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'public')
+        path: path.resolve(__dirname, 'public'),
+        publicPath: '/',
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
@@ -15,11 +16,18 @@ module.exports = {
     module: {
         rules: [
         {
-          test: /\.tsx?$/,
+          test: /\.(ts|tsx)$/,
           exclude: /node_modules/,
           use: {
-          loader: 'babel-loader',
-          },
+            loader: 'ts-loader'
+          }
+        },
+        {
+          test: /\.(js|jsx)$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'babel-loader'
+          }
         },
         {
           test: /\.css$/i,
