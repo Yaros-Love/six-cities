@@ -27,7 +27,7 @@ const Favorites = ({offers}: favoritesProps): JSX.Element => {
                     </div>
                   </div>
                   <div className="favorites__places">
-                    <OfferCardList offers={offers.slice(0, 3)} style={STYLES_OFFERS_CARDS.favorites}/>
+                    <OfferCardList offers={offers.slice(0, 3)} style={STYLES_OFFERS_CARDS.small}/>
                   </div>
                 </li>
 
@@ -40,7 +40,7 @@ const Favorites = ({offers}: favoritesProps): JSX.Element => {
                     </div>
                   </div>
                   <div className="favorites__places">
-                    <OfferCardList offers={offers.slice(3, 6)} style={STYLES_OFFERS_CARDS.favorites}/>
+                    <OfferCardList offers={offers.slice(3, 6)} style={STYLES_OFFERS_CARDS.small}/>
                   </div>
                 </li>
               </ul>

@@ -1,11 +1,11 @@
 export const STYLES_OFFERS_CARDS = {
-  main: {
+  large: {
     article: `cities__place-`,
     imageWrapper: `cities`,
     imageWidth: `260`,
     imageHeight: `200`
   },
-  favorites: {
+  small: {
     article: `favorites__`,
     imageWrapper: `favorites`,
     imageWidth: `150`,

@@ -74,11 +74,11 @@ const Main = ({offers}: mainProps): JSX.Element => {
                   </ul>
                 </form>
                 <div className="cities__places-list places__list tabs__content">
-                  <OfferCardList offers={offers} style={STYLES_OFFERS_CARDS.main}/>
+                  <OfferCardList offers={offers} style={STYLES_OFFERS_CARDS.large}/>
                 </div>
               </section>
               <div className="cities__right-section">
-                <Map offers={offers}/>
+                <Map offers={offers} className={`cities__map map`}/>
               </div>
             </div>
           </div>

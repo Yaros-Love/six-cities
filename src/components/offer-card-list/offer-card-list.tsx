@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {Offer} from '../../mocks/offers';
 import OfferCard from '../offer-card/offer-card';
 
-interface OfferCradList {
+interface OfferCardList {
   offers: Offer[],
   style: {
     article: string,
@@ -12,7 +12,7 @@ interface OfferCradList {
   },
 }
 
-const OfferCradList = ({offers, style}: OfferCradList): JSX.Element => {
+const OfferCardList = ({offers, style}: OfferCardList): JSX.Element => {
   const [currentCardOffer, setCurrentCardOffer] = useState({});
 
   const onCardOfferHover = (offer: Offer) => {
@@ -26,4 +26,4 @@ const OfferCradList = ({offers, style}: OfferCradList): JSX.Element => {
   );
 };
 
-export default OfferCradList;
+export default OfferCardList;
