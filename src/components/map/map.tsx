@@ -9,7 +9,7 @@ const icon = leaflet.icon({
 });
 
 const mainIcon = leaflet.icon({
-  iconUrl: `img/pin-activ.svg`,
+  iconUrl: `img/pin-active.svg`,
   iconSize: [30, 30]
 });
 

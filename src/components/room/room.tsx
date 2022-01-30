@@ -123,9 +123,9 @@ const OfferPage = ({offers}: OfferPageProps): JSX.Element => {
             </div>
             <section className="property__map map">
               <Map
-                offers={offers}
+                offers={nearbyOffers}
                 className={`property__map map`}
-                mainMarker={[offer.coords.latitude, offer.coords.longitude]}/>
+                mainMarker={[offers[Number(id)].coords.latitude, offers[Number(id)].coords.longitude]}/>
             </section>
           </section>
           <div className="container">
